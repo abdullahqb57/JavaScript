@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Calculator </title>
+</head>
+<body>
+    <script>
+        function bmiCalculator(weight, height){
+            var result = weight/(Math.pow(height, 2));
+            return result;
+        }
+        document.write(Math.round(bmiCalculator(109,9)));
+        </script>
+        <script>
+        
+            var age = prompt('enter you age buddy');
+            if( Number(age)<18){
+                alert('you ar not eligible...');
+            } else if(Number(age)>18){
+                alert('you are eligible to vote buddy...');
+            }else{
+                alert('congratulations you are going to vote for the very first time...');
+            }
+        </script>
+</body>
+</html>

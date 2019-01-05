@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background gradient</title>
+</head>
+<body>
+    <h1>Background-Generator</h1>
+    <input class="color1" type="color" name="color1" value="#00ff00">
+    <input class="color2" type="color" name="color2" value="#ff0000">
+    <h2>Css Background</h2>
+    <h3></h3>
+    <script>
+        var css = document.querySelector("h3");
+        var color1 = document.querySelector(".color1");
+        var color2 = document.querySelector(".color2");
+        console.log(css);
+        console.log(color1);
+        console.log(color2);
+
+        function gradient(){
+            document.querySelector("body").style.background = "linear-gradient(to left," + color1.value + "," + color2.value + ")";
+            css.innerHTML = body.style.background.value + ";";
+        };
+
+        color1.addEventListener("input",gradient)
+        color2.addEventListener("input",gradient)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Shopping  list</h1>
+    <input id="ipt" type="text" placeholder="enter items"> 
+    <button id="btn" value="buttn">button</button>
+    <p id="first">Get it done today</p>
+    <p class="second">No excuses</p>
+    <ul id="ull">
+        <li  class="red pink" random='23'>Notebook</li>
+        <li>jello</li>
+        <li>hello</li>
+        <li>bello</li>
+        <li>kello</li>
+        <li>zello</li>
+    </ul>
+
+    <script>
+        // var x = document.getElementsByClassName('second');
+        // console.log(x);
+
+        // var y = document.querySelectorAll('li').getAttribute('random');  //set
+        
+        // console.log(y);
+
+        // var h1 = document.querySelector("li").classList.add('white');
+        // console.log(h1);
+
+        // document.querySelector('h1').innerHTML = 'hello';
+        
+        // var button1 = document.getElementsByTagName("button");
+        // button1.addEventListener("click", function(){
+        //     console.log("click...!!!");
+        // })
+
+        var input1 = document.getElementById("ipt");
+        var button1 = document.getElementById("btn");
+        var ul1 = document.getElementById("ull");
+        {
+            
+        button1.addEventListener("click",function(){
+            if(input1.value.length > 0){
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(input1.value));
+            ul1.appendChild(li);
+            }
+        
+        })
+    };
+
+    </script>
+    
+</body>
+</html>
