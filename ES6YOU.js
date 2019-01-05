@@ -1,13 +1,13 @@
 // //template literals
 
-// let word1 = 'nani';
-// let word2 = 'tinku';
-// let num1 =3;
-// let num2 =9;
-// const fullName = `${num1 +num2} ${word1} 
-// ${word2}`;
+ let word1 = 'nani';
+ let word2 = 'tinku';
+let num1 =3;
+let num2 =9;
+const fullName = `${num1 +num2} ${word1} 
+${word2}`;
 
-// console.log(fullName);
+console.log(fullName);
 
 // //Destructing arrays
 
