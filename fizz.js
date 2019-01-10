@@ -8,7 +8,7 @@ function fizzBuzz(){
       output.push('fizzbuzz');
   }else if(count % 5 === 0) {
       output.push('buzz')   
-    }
+    };
     else if(count % 3 ===0 ){
         output.push('fizz')
     };
