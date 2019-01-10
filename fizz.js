@@ -19,5 +19,5 @@ function fizzBuzz(){
 }
     
  fizzBuzz();   
-console.log(output)
+console.log(output);
 
