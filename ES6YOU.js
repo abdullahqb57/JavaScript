@@ -1,4 +1,4 @@
-// //template literals
+// /template literals
 
  let word1 = 'nani';
  let word2 = 'tinku';
